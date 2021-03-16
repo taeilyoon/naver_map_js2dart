@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.LogoControl')
+@JS('LogoControl')
 class LogoControl {
   external LogoControl(LogoControlOptions LogoControlOptions);
   external HtmlElement getElement();

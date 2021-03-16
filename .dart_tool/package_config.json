@@ -398,13 +398,13 @@
       "languageVersion": "2.4"
     },
     {
-      "name": "naver_maps_js2dart",
+      "name": "naver_map_js2dart",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-03-13T10:55:48.947154Z",
+  "generated": "2021-03-15T06:07:11.806086Z",
   "generator": "pub",
-  "generatorVersion": "2.10.4"
+  "generatorVersion": "2.12.0"
 }

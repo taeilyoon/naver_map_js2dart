@@ -178,7 +178,16 @@ class Margin {}
 
 @anonymous
 @JS()
-class PolygonOptions {}
+class PolygonOptions {
+  NMap map;
+  List<LatLng> paths;
+  num strokeWeight;
+  num strokeOpacity;
+  String strokeColor;
+  String strokeStyle;
+  String fillColor;
+  num fillOpacity;
+}
 
 @anonymous
 @JS()

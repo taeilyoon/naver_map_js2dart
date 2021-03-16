@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.StreetLayer')
+@JS('StreetLayer')
 class StreetLayer {
   external StreetLayer(StreetLayerOptions option);
   external MapType getLayerType();

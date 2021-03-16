@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.MapTypeControl')
+@JS('MapTypeControl')
 class MapTypeControl {
   external MapTypeControl(MapTypeControlOptions MapTypeControlOptions);
   external HtmlElement getElement();

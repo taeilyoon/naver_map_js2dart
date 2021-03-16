@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Point')
+@JS('Point')
 class Point {
   external Point(num x, num y);
   external Point add(num x, num y);

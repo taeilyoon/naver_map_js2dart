@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Tile')
+@JS('Tile')
 class Tile<T extends TileOptions, T2 extends MapType> extends KVO {
   // external Tile(HtmlElement element, T tileOptions);
   external void appendTo(HtmlElement parentNode);

@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.InfoWindow')
+@JS('InfoWindow')
 class InfoWindow extends OverlayView {
   external InfoWindow(InfoWindowOptions options);
   external void close();

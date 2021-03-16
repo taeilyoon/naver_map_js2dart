@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.MapTypeRegistry')
+@JS('MapTypeRegistry')
 class MapTypeRegistry extends KVO {
   external MapTypeRegistry(Object mapTypeInfo, String defaultMapTypeId);
   external String getPreviousTypeId();

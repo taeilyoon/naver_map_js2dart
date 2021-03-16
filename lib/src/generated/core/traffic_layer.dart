@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.TrafficLayer')
+@JS('TrafficLayer')
 class TrafficLayer {
   external TrafficLayer(TrafficLayerOptions option);
   external void endAutoRefresh();

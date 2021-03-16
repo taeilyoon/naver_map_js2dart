@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.OverlayView')
+@JS('OverlayView')
 class OverlayView<T> extends KVO {
   external OverlayView();
   external void draw();

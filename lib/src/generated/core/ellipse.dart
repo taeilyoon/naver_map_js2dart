@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Ellipse')
+@JS('Ellipse')
 class Ellipse extends OverlayView {
   external Ellipse();
   external num getAreaSize();

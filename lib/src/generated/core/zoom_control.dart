@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.ZoomControl')
+@JS('ZoomControl')
 class ZoomControl {
   external ZoomControl(ZoomControlOptions ZoomControlOptions);
   external HtmlElement getElement();

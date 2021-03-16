@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Layer')
+@JS('Layer')
 class Layer extends KVO {
   // external Layer(
   //     String name, MapTypeRegistry MapTypeRegistry, LayerOptions options);

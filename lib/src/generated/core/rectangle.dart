@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Rectangle')
+@JS('Rectangle')
 class Rectangle extends OverlayView {
   external Rectangle(RectangleOptions options);
   external num getAreaSize();

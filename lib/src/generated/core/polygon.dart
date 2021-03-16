@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Polygon')
+@JS('Polygon')
 class Polygon extends OverlayView {
   external Polygon(PolygonOptions options);
   external num getAreaSize();

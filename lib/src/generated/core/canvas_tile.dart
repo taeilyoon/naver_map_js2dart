@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.CanvasTile')
+@JS('CanvasTile')
 class CanvasTile extends Tile<CanvasTileOptions, CanvasMapType> {
   external CanvasTile(CanvasTileOptions canvasTileOptions);
   external void appendTo(HtmlElement parentNode);

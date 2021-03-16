@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.CanvasMapType')
+@JS('CanvasMapType')
 class CanvasMapType extends MapType {
   external CanvasMapType(CanvasMapTypeOptions canvasMapTypeOptions);
   external CanvasMapTypeOptions getMapTypeOptions();

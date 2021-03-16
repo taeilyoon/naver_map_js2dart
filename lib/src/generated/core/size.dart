@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Size')
+@JS('Size')
 class Size {
   external Size(num width, num height);
   external Size add(Object /*Size|SizeLiteral*/ size);

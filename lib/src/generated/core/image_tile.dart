@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.ImageTile')
+@JS('ImageTile')
 class ImageTile extends Tile<ImageTileOptions, ImageMapType> {
   external ImageTile(ImageTileOptions imageTileOptions);
   external void appendTo(HtmlElement parentNode);

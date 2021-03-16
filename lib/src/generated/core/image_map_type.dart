@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.ImageMapType')
+@JS('ImageMapType')
 class ImageMapType extends MapType {
   external ImageMapType(ImageMapTypeOptions imageMapTypeOptions);
   external ImageMapTypeOptions getMapTypeOptions();

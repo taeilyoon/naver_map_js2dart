@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Feature')
+@JS('Feature')
 class Feature extends KVO {
   external Feature(Object rawFeature);
   // external void forEachOverlay(forEachOverlayCallback callback);

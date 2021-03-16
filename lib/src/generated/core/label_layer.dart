@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.LabelLayer')
+@JS('LabelLayer')
 class LabelLayer extends Layer {
   external LabelLayer(String name, ImageMapType registry, Object option);
   external MapType getLayerType();

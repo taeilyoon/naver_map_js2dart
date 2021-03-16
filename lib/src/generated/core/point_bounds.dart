@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.PointBounds')
+@JS('PointBounds')
 class PointBounds {
   external PointBounds(Point minPoint, Point maxPoint);
   external PointBounds bounds(Object /*Coord|PointLiteral*/ point,

@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Data')
+@JS('Data')
 class Data extends KVO {
   external Data();
   external void addFeature(Feature feature, bool autoStyle);

@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.KVO')
+@JS('KVO')
 class KVO {
   external KVO();
   external MapEventListener addListener(String eventName, Function listener);

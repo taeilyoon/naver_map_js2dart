@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.LatLngBounds')
+@JS('LatLngBounds')
 class LatLngBounds {
   external LatLngBounds(LatLng sw, LatLng ne);
   // external LatLngBounds<static> bounds(Coord latlng, Coord latlngN);

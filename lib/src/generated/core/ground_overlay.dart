@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.GroundOverlay')
+@JS('GroundOverlay')
 class GroundOverlay extends OverlayView {
   external GroundOverlay(String url, Object /*Bounds|BoundsLiteral*/ bounds,
       GroundOverlayOptions options);

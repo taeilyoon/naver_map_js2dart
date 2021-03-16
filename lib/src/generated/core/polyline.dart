@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Polyline')
+@JS('Polyline')
 class Polyline extends OverlayView<PolylineOptions> {
   external Polyline(PolylineOptions options);
   external Bounds getBounds();

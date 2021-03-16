@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.ScaleControl')
+@JS('ScaleControl')
 class ScaleControl {
   external ScaleControl(ScaleControlOptions ScaleControlOptions);
   external HtmlElement getElement();

@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.MapDataControl')
+@JS('MapDataControl')
 class MapDataControl {
   external MapDataControl(MapDataControlOptions MapDataControlOptions);
   external HtmlElement getElement();

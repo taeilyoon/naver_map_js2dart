@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.CustomControl')
+@JS('CustomControl')
 class CustomControl extends KVO {
   external CustomControl(String html, ControlOptions ControlOptions);
   external HtmlElement getElement();

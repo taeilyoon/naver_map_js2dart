@@ -1,1 +1,0 @@
-{"isEntrypoint":true,"deps":["js|lib/js.dart","naver_maps_js2dart|lib/src/generated/naver_map_core.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":["html"],"hasMain":true}

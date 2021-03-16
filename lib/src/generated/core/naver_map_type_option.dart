@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.NaverMapTypeOption')
+@JS('NaverMapTypeOption')
 class NaverMapTypeOption {
   external NaverMapTypeOption(NaverImageMapTypeOptions options);
   external ImageMapType getBicycleLayer(NaverImageMapTypeOptions opts);

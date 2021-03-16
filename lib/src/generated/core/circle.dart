@@ -1,6 +1,6 @@
 part of '../naver_map_core.dart';
 
-@JS('naver.maps.Circle')
+@JS('Circle')
 class Circle extends OverlayView {
   external Circle(CircleOptions options);
   external num getAreaSize();

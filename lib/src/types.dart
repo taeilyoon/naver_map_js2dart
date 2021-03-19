@@ -162,6 +162,7 @@ class RectangleOptions {}
 class MarkerOptions {
   NMap map;
   LatLng position;
+  bool clickable = true;
 }
 
 @anonymous
@@ -187,6 +188,7 @@ class PolygonOptions {
   String strokeStyle;
   String fillColor;
   num fillOpacity;
+  bool clickable = true;
 }
 
 @anonymous

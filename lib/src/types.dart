@@ -159,10 +159,15 @@ class RectangleOptions {}
 
 @anonymous
 @JS()
+class MarkerIcon {}
+
+@anonymous
+@JS()
 class MarkerOptions {
   NMap map;
   LatLng position;
   bool clickable = true;
+  MarkerIcon markerIcon;
 }
 
 @anonymous

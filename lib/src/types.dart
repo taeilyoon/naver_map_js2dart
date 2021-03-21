@@ -193,7 +193,20 @@ class PolygonOptions {
 
 @anonymous
 @JS()
-class PolylineOptions {}
+class PolylineOptions {
+  NMap map;
+  bool clickable = true;
+  List<LatLng> path;
+  num strokeOpacity;
+  String strokeColor;
+  String strokeStyle;
+  String strokeLineCap;
+  String strokeLineJoin;
+  num zIndex;
+  // PointingIcon startIcon;
+  // PointingIcon endIcon;
+
+}
 
 @anonymous
 @JS()

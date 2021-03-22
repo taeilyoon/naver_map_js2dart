@@ -92,7 +92,7 @@ class ImageMapTypeOptions extends CanvasMapTypeOptions {}
 @JS()
 class InfoWindowOptions {
   LatLng position;
-  String contnet;
+  String content;
   num zIndex;
   num maxWidth;
   Point pixelOffset;

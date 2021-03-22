@@ -16,15 +16,15 @@ void main() {
     ..clickable = true
     ..position = LatLng(35.1379222, 129.05562775));
 
-  // marker.addListener("click", allowInterop((e) {
-  //   print("marker click");
-  // }));
+  marker.addListener("click", allowInterop((e) {
+    marker.setMap(null);
+  }));
   marker.addListener("mouseover", allowInterop((e) {
     print("mouseover");
   }));
-  var polygon = Polygon(PolygonOptions()
+  var polygon = Polyline(PolylineOptions()
     ..map = map
-    ..paths = [
+    ..path = [
       LatLng(37.37544345085402, 127.11224555969238),
       LatLng(37.37230584065902, 127.10791110992432),
       LatLng(37.35975408751081, 127.10795402526855),
@@ -35,10 +35,11 @@ void main() {
       LatLng(37.365211629488016, 127.12456226348876),
       LatLng(37.37544345085402, 127.11224555969238)
     ]
-    ..fillColor = '#ff0000'
+    // ..fillColor = '#ff0000'
     ..clickable = true
-    ..fillOpacity = 0.3
-    ..strokeColor = '#ff0000');
+    // ..fillOpacity = 0.3
+    ..strokeOpacity = 1
+    ..strokeColor = '#ff000000');
 
   polygon.addListener("mouseover", allowInterop((e) {
     print("mouseover");

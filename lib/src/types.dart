@@ -90,7 +90,21 @@ class ImageMapTypeOptions extends CanvasMapTypeOptions {}
 
 @anonymous
 @JS()
-class InfoWindowOptions {}
+class InfoWindowOptions {
+  LatLng position;
+  String contnet;
+  num zIndex;
+  num maxWidth;
+  Point pixelOffset;
+  String backGroundColor;
+  String borderColor;
+  num borderWidth;
+  bool disableAutoPan;
+  bool disableAnchor;
+  bool anchorSkew;
+  Size anchorSize;
+  String anchorColor;
+}
 
 @anonymous
 @JS()
@@ -210,6 +224,7 @@ class PolylineOptions {
   num strokeOpacity;
   String strokeColor;
   String strokeStyle;
+  num strokeWeight;
   String strokeLineCap;
   String strokeLineJoin;
   num zIndex;

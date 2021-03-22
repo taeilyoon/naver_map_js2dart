@@ -159,7 +159,12 @@ class RectangleOptions {}
 
 @anonymous
 @JS()
-class MarkerIcon {}
+class MarkerIcon {
+  String content;
+  String url;
+  Size size;
+  Point anchor;
+}
 
 @anonymous
 @JS()

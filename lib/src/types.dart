@@ -205,7 +205,7 @@ class Margin {}
 @JS()
 class PolygonOptions {
   NMap map;
-  List<LatLng> paths;
+  List<LatLng> paths = [];
   num strokeWeight;
   num strokeOpacity;
   String strokeColor;
@@ -220,7 +220,7 @@ class PolygonOptions {
 class PolylineOptions {
   NMap map;
   bool clickable = true;
-  List<LatLng> path;
+  List<LatLng> path = [];
   num strokeOpacity;
   String strokeColor;
   String strokeStyle;

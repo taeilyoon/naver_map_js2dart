@@ -6,11 +6,11 @@ import 'package:naver_map_js2dart/src/generated/naver_map_core.dart';
 void main() {
   var map = NMap(querySelector('#canvas'),
       MapOptions()..center = LatLng(37.3674001, 127.1181196));
-  // map.addListener("mousemove", allowInterop((e) {
-  //   var marker = Marker(MarkerOptions()
-  //     ..map = map
-  //     ..position = e.coord);
-  // }));
+  map.addListener("mousemove", allowInterop((e) {
+    var marker = Marker(MarkerOptions()
+      ..map = map
+      ..position = e.coord);
+  }));
   var marker = Marker(MarkerOptions()
     ..map = map
     ..clickable = true
@@ -22,9 +22,9 @@ void main() {
   marker.addListener("mouseover", allowInterop((e) {
     print("mouseover");
   }));
-  var polygon = Polyline(PolylineOptions()
+  var polygon = Polygon(PolygonOptions()
     ..map = map
-    ..path = [
+    ..paths = [
       LatLng(37.37544345085402, 127.11224555969238),
       LatLng(37.37230584065902, 127.10791110992432),
       LatLng(37.35975408751081, 127.10795402526855),
@@ -35,9 +35,9 @@ void main() {
       LatLng(37.365211629488016, 127.12456226348876),
       LatLng(37.37544345085402, 127.11224555969238)
     ]
-    // ..fillColor = '#ff0000'
+    ..fillColor = '#ff0000'
     ..clickable = true
-    // ..fillOpacity = 0.3
+    ..fillOpacity = 0.3
     ..strokeOpacity = 1
     ..strokeColor = '#ff000000');
 

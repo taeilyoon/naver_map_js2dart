@@ -44,6 +44,8 @@ class CanvasTileOptions extends TileOptions {
   num zIndex = 0;
   Size size;
   HtmlElement pane;
+
+  external factory CanvasTileOptions();
 }
 
 @anonymous
@@ -51,6 +53,8 @@ class CanvasTileOptions extends TileOptions {
 class TileIndex {
   num xIndex;
   num yIndex;
+
+  external factory TileIndex();
 }
 
 // https://navermaps.github.io/maps.js.ncp/docs/naver.maps.Circle.html#toc27__anchor
@@ -104,6 +108,7 @@ class InfoWindowOptions {
   bool anchorSkew;
   Size anchorSize;
   String anchorColor;
+  external factory InfoWindowOptions();
 }
 
 @anonymous
@@ -174,10 +179,17 @@ class RectangleOptions {}
 @anonymous
 @JS()
 class MarkerIcon {
-  String content;
-  String url;
-  Size size;
-  Point anchor;
+  // String content;
+  // String url;
+  // Size size;
+  // Point anchor;
+
+  // external factory MarkerIcon({
+  //   NMap map,
+  //   LatLng position,
+  //   bool clickable = true,
+  //   MarkerIcon markerIcon,
+  // });
 }
 
 @anonymous
@@ -186,7 +198,8 @@ class MarkerOptions {
   NMap map;
   LatLng position;
   bool clickable = true;
-  MarkerIcon markerIcon;
+  // MarkerIcon markerIcon;
+  external factory MarkerOptions({NMap map, LatLng position, boolclickable});
 }
 
 @anonymous
@@ -213,6 +226,17 @@ class PolygonOptions {
   String fillColor;
   num fillOpacity;
   bool clickable = true;
+  external factory PolygonOptions({
+    NMap map,
+    List<LatLng> paths = const [],
+    num strokeWeight,
+    num strokeOpacity,
+    String strokeColor,
+    String strokeStyle,
+    String fillColor,
+    num fillOpacity,
+    bool clickable = true,
+  });
 }
 
 @anonymous
@@ -230,7 +254,18 @@ class PolylineOptions {
   num zIndex;
   // PointingIcon startIcon;
   // PointingIcon endIcon;
-
+  external factory PolylineOptions({
+    NMap map,
+    bool clickable,
+    List<LatLng> path,
+    num strokeOpacity,
+    String strokeColor,
+    String strokeStyle,
+    num strokeWeight,
+    String strokeLineCap,
+    String strokeLineJoin,
+    num zIndex,
+  });
 }
 
 @anonymous

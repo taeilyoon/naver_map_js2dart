@@ -1,4 +1,5 @@
 import 'dart:html';
+import 'dart:js';
 
 import 'package:js/js.dart';
 import 'package:naver_map_js2dart/src/generated/naver_map_core.dart';
@@ -6,10 +7,9 @@ import 'package:naver_map_js2dart/src/generated/naver_map_core.dart';
 void main() {
   var map = NMap(querySelector('#canvas'),
       MapOptions()..center = LatLng(37.3674001, 127.1181196));
-  map.addListener("mousemove", allowInterop((e) {
-    var marker = Marker(MarkerOptions()
-      ..map = map
-      ..position = e.coord);
+  map.addListener("click", allowInterop((MapEventListener e) {
+    print(e.coord);
+    print(e.latlng);
   }));
   var marker = Marker(MarkerOptions()
     ..map = map

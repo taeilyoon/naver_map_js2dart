@@ -117,7 +117,8 @@ class MapEventListener {
   String eventName;
   Function listener;
   String listenerId;
-  Object target;
+  LatLng coord;
+  LatLng latlng;
 }
 
 @anonymous
